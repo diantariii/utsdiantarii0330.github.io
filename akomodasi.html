@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akomodasi</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Island+Moments&display=swap');
+        .header{
+            background-image: url("gambar1.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            padding: 30px;
+            color: #ffff;
+            background-color: aliceblue;
+            height: 20vh;
+        }
+
+        .header{
+            display: flex;
+        }
+
+        .header>h1{
+            margin-top: 3%;
+            margin-left: 1%;
+        }
+
+        .header>h1>p{
+          font-size: 1em;
+          font-family: 'Island Moments', cursive;
+        }
+
+        .header>img{
+            width: 10%;
+        }
+
+        *,body{
+            margin: 0;
+        }
+        .navbar{
+            overflow: hidden;
+            background-color: rgba(98, 78, 78, 0.906);
+            opacity: 0.8;
+            filter: alpha(opacity=40);
+            position: sticky;
+            top: 0;
+        }
+
+        .navbar>a:hover{
+            background-color: #ddd;
+            transition: ease-in-out .4s;
+        }
+
+        .navbar>a{
+            color: rgb(0, 0, 0);
+            float: left;
+            display: block;
+            text-align:center;
+            padding: 14px 20px;
+            text-decoration: none;
+            font-size: larger;
+        }
+
+        .navbar>a.active{
+            background-color: #ddd;
+        }
+
+
+        .acomodation h1 {
+            left: 563px;
+            top: 2260px;
+            font-weight: 800;
+            font-size: 36px;
+            line-height: 54px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            color: #000C03;
+            text-shadow: 0px 4px 5px rgba(0, 0, 0, 0.25);
+        }
+        .kolom {
+            background: #719374;
+            width: 1280px;
+            height: 562px;
+            left: 80px;
+            top: 2337px;
+            column-count: 3;
+            -moz-column-count: 3;
+            -webkit-column-count: 3;
+            justify-content: center;
+            column-gap: 20px;
+            -moz-column-gap: 20px;
+            -webkit-column-gap: 20px;
+            border-radius: 20px 20px 3px 3px;
+        }
+        .card {
+            width: 414px;
+            height: 480px;
+            background-color: white;
+            border-radius: 0px 0px 20px 20px;
+        }
+        .acomodation h2 {
+            text-align: center;
+            padding: 8px 0px;
+        }
+        .acomodation h3 {
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 36px;
+            padding-top: 5px;
+            padding-left: 20px;
+            color: #000C03;
+        }
+        .price {
+            padding-top: 50px;
+            padding-left: 50px;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 30px;
+            color: #000C03;
+        }
+        .acomodation a {
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 30px;
+            color: white;
+            text-decoration: none;
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        }
+        .acomodation a:hover {
+            color: #000C03;
+        }
+        .hotel .cover {
+            background-image: url(dedanau.jpg);
+            width: 396px;
+            height: 237px;
+            margin: auto;
+        }
+        .villa .cover {
+            background-image: url(villa.jpg);
+            width: 396px;
+            height: 237px;
+            margin: auto;
+        }
+        .guest .cover {
+            background-image: url(umah.jpg);
+            width: 396px;
+            height: 237px;
+            margin: auto;
+        }
+        button {
+            width: 232px;
+            height: 45px;
+            left: 661px;
+            top: 3611px;
+            color: #000C03;
+            margin-left: 20px;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 36px;
+            background: #D9D9D9;
+            border-radius: 30px;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="tabanan.png" alt="logo">
+        <h1>Objek Wisata Danau Beratan<p>Bedugul, Tabanan</p></h1>
+  </div>
+  
+  <div class="navbar">
+    <a href="index.html" >Home</a>
+    <a href="objek.html">Lokasi</a>
+    <a href="akomodasi.html" class="active">Akomodasi</a>
+    <a href="tiket.html">Ticket</a>
+  </div>
+  <div class="acomodation">
+    <div class="contentacomodation">
+        <h1 id="acomodation">Sarana Akomodasi</h1>
+        <div class="kolom">
+            <div class="hotel">
+                <h2><a href="">Hotel</a></h2>
+                <div class="card">
+                    <div class="cover"></div>
+                    <h3>Dedanau Hotel</h3>
+                    <p class="price">Rp. 1.080.000/Night</p>
+                    <button>Book Now</button>
+                    </div>
+            </div>
+            <div class="villa">
+                <h2><a href="">Hotel & Villa</a></h2>
+                <div class="card">
+                    <div class="cover"></div>
+                    <h3>Griwood Hotel & Villa</h3>
+                    <p class="price">Rp. 916.750/Night</p>
+                    <button>Book Now</button>
+                </div>
+            </div>
+            <div class="guest">
+                <h2><a href="">Villa</a></h2>
+                <div class="card">
+                    <div class="cover"></div>
+                    <h3>Umah Lumbung Bedugul</h3>
+                    <p class="price">Rp. 400.000/Night</p>
+                    <button>Book Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

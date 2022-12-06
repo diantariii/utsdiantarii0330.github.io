@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiket</title>
+    <style>
+         @import url('https://fonts.googleapis.com/css2?family=Island+Moments&display=swap');
+        .header{
+            background-image: url("gambar1.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            padding: 30px;
+            color: #ffff;
+            background-color: aliceblue;
+            height: 20vh;
+        }
+
+        .header{
+            display: flex;
+        }
+
+        .header>h1{
+            margin-top: 3%;
+            margin-left: 1%;
+        }
+
+        .header>h1>p{
+          font-size: 1em;
+          font-family: 'Island Moments', cursive;
+        }
+
+        .header>img{
+            width: 10%;
+        }
+
+        *,body{
+            margin: 0;
+        }
+        .navbar{
+            overflow: hidden;
+            background-color: rgba(98, 78, 78, 0.906);
+            opacity: 0.8;
+            filter: alpha(opacity=40);
+            position: sticky;
+            top: 0;
+        }
+
+        .navbar>a:hover{
+            background-color: #ddd;
+        }
+
+        .navbar>a{
+            color: rgb(0, 0, 0);
+            float: left;
+            display: block;
+            text-align:center;
+            padding: 14px 20px;
+            text-decoration: none;
+            font-size: larger;
+        }
+
+        .navbar>a.active{
+            background-color: #ddd;
+        }
+        .row{
+            display: flex;
+            flex-wrap: wrap;
+            margin: 2%;
+        }
+
+        .inline-row{
+            margin: 3px;
+        }
+
+        .side{
+            flex: 20%;
+            background-color: #f1f1f1;
+            padding: 20px;
+        }
+
+        .side>h2{
+            padding-bottom: 2%;
+        }
+
+        .side>p{
+            padding-top: 3%;
+        }
+
+        .button1{
+            background-color: rgba(98, 78, 78, 0.906) ;
+        }
+
+        input[type=text], select{
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        .imgtest{
+            background-image: url("5.jpg");
+            background-color: #aaa;
+            background-size: cover;
+            background-position: center;
+            width: 100%;
+            padding: 20px;
+        }
+
+        .imgtest1{
+            background-image: url("3.jpg");
+            background-color: #aaa;
+            background-size: cover;
+            background-position: bottom;
+            width: 100%;
+            padding: 20px;
+        }
+        
+        .main{
+            flex: 60%;
+            background-color: #f1f1f1;
+            background-size: cover;
+            padding: 20px;
+        }
+
+        .row{
+            width: 50vw ;
+            margin: auto;
+        }
+
+        .row>table{
+            width: 50vw ;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="tabanan.png" alt="logo">
+        <h1>Objek Wisata Danau Beratan<p>Bedugul, Tabanan</p></h1>
+  </div>
+  
+  <div class="navbar">
+    <a href="index.html">Home</a>
+    <a href="objek.html">Lokasi</a>
+    <a href="akomodasi.html">Akomodasi</a>
+    <a href="tiket.html"  class="active">Ticket</a>
+  </div>
+
+    <div class="main">
+        <div class="row">
+          <table border="1" style="border-collapse: collapse;" width="50%" >
+              <thead>
+                  <tr style="background-color: rgba(97, 74, 74, 0.555);">
+                      <th>NO</th>
+                      <th>Kategori</th>
+                      <th>Harga</th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr>
+                      <td>1</td>
+                      <td>Dewasa</td>
+                      <td>Rp. 30.000/1 orang dewasa</td>
+                  </tr>
+                  <tr>
+                      <td>2</td>
+                      <td>Anak-Anak</td>
+                      <td>Rp. 20.000/1 anak</td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>Parkir Motor Roda Dua</td>
+                    <td>Rp. 2.000/1 motor</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Parkir Mobil Roda Empat</td>
+                    <td>Rp. 5.000/1 mobil</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Parkir Bus</td>
+                    <td>Rp. 10.000/bus</td>
+                </tr>
+          </table>
+        </div>
+        <div class="main">
+            <form action="">
+              <div class="row">
+                <label for="nama">Nama</label>
+                <input type="text" id="nama" name="nama">
+              </div>
+              
+              <div class="row">
+              <label for="ticket">Kategori Ticket</label>
+              <select name="ticket" id="JenisTicket">
+                  <option value="-">--PILIH KATEGORI TIKET--</option>
+                  <option value="Dewasa">Dewasa</option>
+                  <option value="Anak-Anak">Anak-Anak</option>
+              </select>
+              </div>
+              <div class="row">
+                  <div class="inline-row">
+                  <label for="jenis-kelamin">Jenis Kelamin <br></label>
+                  <input type="radio" id="nama"  name="fav_language" value="lakilaki">
+                  <label for="lakilaki">Laki-Laki</label><br>
+                  <input type="radio" id="nama"  name="fav_language" value="perempuan">
+                  <label for="perempuan">Perempuan</label><br>
+                  </div>
+              </div>
+  
+              <div class="row">
+              
+                  <label for="telp">No Telp</label>
+                  <input type="text" id="nama" name="telp" placeholder="0811-2222-3333" > 
+              </div>
+  
+              <div class="row">
+                  <label for="email">Email</label>
+                  <input type="text" id="nama" name="email" placeholder="@gmail.com">
+              </div>
+  
+              <div class="row">
+                  <button class="button1">Simpan</button>
+              </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

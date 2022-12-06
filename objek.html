@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Objek Wisata di Tabanan</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Island+Moments&display=swap");
+      .header {
+        background-image: url("gambar1.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        padding: 30px;
+        color: #ffff;
+        background-color: aliceblue;
+        height: 20vh;
+      }
+
+      .header {
+        display: flex;
+      }
+
+      .header > h1 {
+        margin-top: 3%;
+        margin-left: 1%;
+      }
+
+      .header > h1 > p {
+        font-size: 1em;
+        font-family: "Island Moments", cursive;
+      }
+
+      .header > img {
+        width: 10%;
+      }
+
+      *,
+      body {
+        margin: 0;
+      }
+      .navbar {
+        overflow: hidden;
+        background-color: rgba(98, 78, 78, 0.906);
+        opacity: 0.8;
+        filter: alpha(opacity=40);
+        position: sticky;
+        top: 0;
+      }
+
+      .navbar > a:hover {
+        background-color: #ddd;
+        transition: ease-in-out 0.4s;
+      }
+
+      .navbar > a {
+        color: rgb(0, 0, 0);
+        float: left;
+        display: block;
+        text-align: center;
+        padding: 14px 20px;
+        text-decoration: none;
+        font-size: larger;
+      }
+
+      .navbar > a.active {
+        background-color: #ddd;
+      }
+
+      .container > a > img {
+        width: 30vw;
+        height: 43vh;
+        margin: 27px;
+        border-radius: 10px;
+        transition: ease-in-out 0.4s;
+      }
+
+      .container > a > img:hover {
+        width: 31vw;
+        height: 45vh;
+        transition: ease-in-out 0.3s;
+      }
+
+      .container > a {
+        text-decoration: none;
+      }
+
+      .container > a > p {
+        text-align: center;
+        margin: 20px;
+        color: black;
+        cursor: default;
+        overflow: -moz-hidden-unscrollable;
+        max-height: 6em;
+      }
+
+      .container {
+        display: grid;
+        grid-template-columns: auto auto;
+      }
+
+      .container iframe {
+        width: 30vw;
+        height: 43vh;
+        margin: 27px;
+        border-radius: 10px;
+        transition: ease-in-out 0.4s;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <img src="tabanan.png" alt="logo" />
+     <h1>Objek Wisata Danau Beratan<p>Bedugul, Tabanan</p></h1>
+    </div>
+
+    <div class="navbar">
+      <a href="index.html">Home</a>
+      <a href="objek.html" class="active">Lokasi</a>
+      <a href="akomodasi.html">Akomodasi</a>
+      <a href="tiket.html">Ticket</a>
+    </div>
+
+    <div class="container">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126345.88093691805!2d115.10405361569059!3d-8.272033504841325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd1896c9fac0857%3A0x18246568e4db1b53!2sPura%20Ulun%20Danu%20Beratan%20Bedugul!5e0!3m2!1sid!2sid!4v1668671936197!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <a href=""><img src="gambar4.jpg" alt="" /></a>
+      <a href=""><img src="gambar5.jpg" alt="" /></a>
+      <a href=""><img src="gambar6.jpg" alt="" /></a>
+    </div>
+  </body>
+</html>
